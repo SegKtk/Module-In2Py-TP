@@ -1,0 +1,5 @@
+segla = {'C':[20,20,20], 'PYTHON':[20,18,20], 'UML':[15,18,19], 'WEB':[15,20,19], 'SE':[15,16,14], 'ALGEBRE':[16,16,16], 'PROBA':[18,16,14] }
+moyenneCours = {'C':(segla['C'][0]+segla['C'][1]+segla['C'][2])/3, 'PYTHON':(segla['PYTHON'][0]+segla['PYTHON'][1]+segla['PYTHON'][2])/3, 'UML':(segla['UML'][0]+segla['UML'][1]+segla['UML'][2])/3, 'WEB':(segla['WEB'][0]+segla['WEB'][1] + segla['WEB'][2])/3, 'SE':(segla['SE'][0] + segla['SE'][1]+segla['SE'][2])/3, 'ALGEBRE':(segla['ALGEBRE'][0]+segla['ALGEBRE'][1]+segla['ALGEBRE'][2])/3, 'PROBA':(segla['PROBA'][0]+segla['PROBA'][1]+segla['PROBA'][2])/3}
+moyenneGene = (moyenneCours['C']+moyenneCours['PYTHON']+moyenneCours['UML']+moyenneCours['WEB']+moyenneCours['SE']+moyenneCours['ALGEBRE']+moyenneCours['PROBA'])/len(segla)
+
+print("Ta moyenne est : " + str(moyenneGene))
